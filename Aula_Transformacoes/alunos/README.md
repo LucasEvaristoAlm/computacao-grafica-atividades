@@ -57,3 +57,14 @@ ESC fecha a janela. P salva a captura em `capturas/resultado.png`.
 
 ## Referência
 STEMKOSKI, Lee; PASCALE, Michael. *Developing graphics frameworks with Python and OpenGL*. Boca Raton: CRC Press, 2022. Capítulo 3 (Matrix Algebra and Transformations).
+
+## Entrega: Mini Sistema Solar
+
+- **Disciplina:** Computação Gráfica
+- **Atividade:** Mini Sistema Solar
+- **Integrantes:** Gabriel Medeiros de Souza Costa e Lucas Evaristo Almeida de Paula
+- **Descrição:** O Sol gira em torno do próprio centro; o planeta orbita o Sol e também gira sobre o próprio eixo. A Lua orbita o planeta e acompanha seu movimento. As setas para cima e para baixo controlam a velocidade da órbita.
+
+**Resposta da questão:** Em `R @ T`, a translação desloca o planeta para a distância orbital e a rotação, aplicada depois, faz esse deslocamento girar em torno do Sol. A rotação própria fica à direita da translação para girar o planeta em torno do seu centro local antes de posicioná-lo na órbita; assim, essa rotação não altera sua distância ao Sol.
+
+**Arquivos:** [atividade_sistema_solar.py](atividade_sistema_solar.py) e [captura do resultado](capturas/resultado.png).

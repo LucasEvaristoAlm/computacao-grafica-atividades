@@ -58,3 +58,14 @@ ESC fecha a janela. P salva a captura em `capturas/resultado.png`.
 
 ## Referência
 STEMKOSKI, Lee; PASCALE, Michael. *Developing graphics frameworks with Python and OpenGL*. Boca Raton: CRC Press, 2022. Capítulo 4 (A Scene Graph Framework).
+
+## Entrega: Braço Robótico
+
+- **Disciplina:** Computação Gráfica
+- **Atividade:** Braço Robótico
+- **Integrantes:** Gabriel Medeiros de Souza Costa e Lucas Evaristo Almeida de Paula
+- **Descrição:** O braço articulado é construído com uma hierarquia de objetos: a base contém o pivô do ombro, que contém o braço e o pivô do cotovelo; o antebraço e a garra acompanham as rotações das articulações. As teclas A/D giram a base, W/S movimentam o ombro e I/K movimentam o cotovelo.
+
+**Resposta da questão:** Os pivôs definem os centros de rotação nas articulações. Ao girar diretamente uma caixa, ela gira em torno do próprio centro; com pivôs e uma hierarquia pai-filho, braço, antebraço e garra giram em torno das extremidades conectadas e acompanham o movimento das articulações anteriores.
+
+**Arquivos:** [atividade_braco.py](atividade_braco.py) e [captura do resultado](capturas/resultado.png).

@@ -51,3 +51,14 @@ As texturas foram criadas para este material e podem ser usadas na atividade.
 
 ## Verificação realizada
 Os dois exemplos e a solução do professor renderizaram com OpenGL 4.5 core (Mesa) em Linux e Python 3.12.14, e também no macOS com Python 3.13.2 (Pygame 2.6.1, PyOpenGL 3.1.10, NumPy 2.5.2). Shaders compilaram e o ciclo de desenho terminou sem erro OpenGL. A orientação da grade foi conferida nas capturas. O Windows tem instruções e contexto 3.2 core preparado, mas não foi testado diretamente. No macOS, Material cria um VAO temporário antes de compilar os shaders, pois o perfil core exige um VAO vinculado na validação do programa.
+
+## Entrega: Cubo com Satélite Texturizado
+
+- **Disciplina:** Computação Gráfica
+- **Atividade:** Cubo com Satélite Texturizado
+- **Integrantes:** Gabriel Medeiros de Souza Costa e Lucas Evaristo Almeida de Paula
+- **Descrição:** O cubo principal usa `mosaico.png`; um cubo menor, filho do principal, usa `grade_uv.png` repetida duas vezes em cada eixo. O satélite acompanha a rotação do cubo e gira em torno do próprio eixo X. As setas para cima e para baixo alteram a velocidade do cubo principal.
+
+**Resposta da questão:** As coordenadas UV associam pontos da superfície do cubo a posições (U,V) da imagem, definindo como a textura é aplicada. Com `repeatUV = [2,2]`, o padrão é repetido duas vezes em cada eixo da textura, em vez de ocupar a face uma única vez.
+
+**Arquivos:** [atividade_cubo.py](atividade_cubo.py) e [captura do resultado](capturas/resultado.png).
